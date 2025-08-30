@@ -4,7 +4,7 @@
   "info": {
     "singularName": "tour-categoy",
     "pluralName": "tour-categoys",
-    "displayName": "Tour Categoy"
+    "displayName": "Tour Category"
   },
   "options": {
     "draftAndPublish": true
@@ -15,13 +15,14 @@
       "type": "string"
     },
     "Slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "Name"
     },
     "tours": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tour.tour",
-      "mappedBy": "tour_categoy"
+      "mappedBy": "tour_category"
     }
   }
 }

@@ -15,7 +15,8 @@
       "type": "string"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "description": {
       "type": "blocks"
@@ -68,7 +69,7 @@
     "location": {
       "type": "string"
     },
-    "tour_categoy": {
+    "tour_category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::tour-categoy.tour-categoy",
