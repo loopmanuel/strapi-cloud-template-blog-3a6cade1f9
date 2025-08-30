@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tour_categoys",
+  "info": {
+    "singularName": "tour-categoy",
+    "pluralName": "tour-categoys",
+    "displayName": "Tour Categoy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid"
+    },
+    "tours": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tour.tour",
+      "mappedBy": "tour_categoy"
+    }
+  }
+}
